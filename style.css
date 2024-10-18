@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Helvetica', sans-serif;
+    background-color: #f4f4f4;
+    color: #ff7575;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.container {
+    background-color: #fcf5f5;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 8px 15px rgba(255, 131, 131, 0.411);
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+}
+
+.container h2 {
+    font-size: 1.6em;
+    margin-bottom: 20px;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    font-size: 1em;
+    margin-bottom: 20px;
+}
+
+button {
+    background-color: #ff7575;
+    color: rgb(255, 255, 255);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #f59d9d;
+}
+
+#errorMessage {
+    color: red;
+    margin-top: 10px ;
+}
+
+.foto {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin: 10px;
+}
+
+.message-container {
+    background-color: #ffe6e6;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 8px 15px rgba(255, 131, 131, 0.411);
+    text-align: center;
+}
+
+.message-container h2 {
+    font-size: 1.6em;
+    margin-bottom: 20px;
+}
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(-10);
+    }
+}
+
+
+.message-container {
+    background-color: #ffe6e6;
+    padding: 20px;
+    padding-bottom: 30px;
+    border-radius: 8px;
+    box-shadow: 0 8px 15px rgba(255, 131, 131, 0.411);
+    text-align: center;
+    animation: fadeIn 2s ease; 
+}
+
+
+
+.message-container h2 {
+    font-size: 1.9em; 
+    color: #d9534f; 
+}
+
+.message-container p {
+    font-size: 1.1em; 
+    line-height: 1.5;
+}
